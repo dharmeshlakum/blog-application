@@ -32,3 +32,6 @@ server/build/
 # Temporary files
 *.swp
 *.swo
+
+# Ignore Images
+server/src/assets/
