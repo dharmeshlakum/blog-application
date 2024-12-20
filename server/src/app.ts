@@ -1,5 +1,6 @@
 import express from "express";
 import cors from "cors";
+import authRouter from "./routes/auth/authRouter";
 
 const app = express();
 const port = process.env.PORT || 8001;
@@ -14,6 +15,7 @@ app.use(cors({
 }));
 
 // Routes
+app.use(authRouter);
 
 // Listener
 app.listen(port, () => {
