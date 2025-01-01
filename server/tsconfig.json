@@ -5,9 +5,6 @@
         "module": "NodeNext",
         "esModuleInterop": true,
         "allowJs": true,
-        "lib": [
-            "ES2020"
-        ]
     },
     "exclude": [
         "node_modules"
