@@ -1,7 +1,7 @@
 import mongoose, { Document, Schema, model } from "mongoose";
 
 // Interface : Defines Comment Collection Schema Types
-export interface IComment {
+export interface IComment extends Document {
     user: mongoose.Schema.Types.ObjectId;
     blog: mongoose.Schema.Types.ObjectId;
     message: string;
