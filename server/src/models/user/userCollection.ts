@@ -88,7 +88,7 @@ const userCollectionSchema = new Schema<IUsers>({
         default: Date.now()
     }
 
-});
+}, {timestamps: true});
 
 // Pre Middleware
 userCollectionSchema.pre("save", async function (next) {
