@@ -51,3 +51,5 @@ const signupValidationMW = async (req: Request, res: Response, next: NextFunctio
         responseErrorFN(res, "Internal server error !", 500);
     }
 }
+
+export default signupValidationMW;
