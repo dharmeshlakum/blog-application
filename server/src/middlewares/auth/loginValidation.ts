@@ -69,7 +69,8 @@ const loginValidationMW = async (req: CustomRequest, res: Response, next: NextFu
                         username: user.username,
                         fullName: user.fullName,
                         profilePicture: user.profilePicture
-                    }
+                    },
+                    token : newToken
                 });
 
             } else {
