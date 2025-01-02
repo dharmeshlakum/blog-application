@@ -1,6 +1,7 @@
 import express from "express";
 import cors from "cors";
 import requestTrackingMW from "./middlewares/RequestLog/RequestLogTrack";
+import authRouter from "./routes/auth/authRouter";
 
 const app = express();
 const port = process.env.PORT || 8000;
@@ -16,6 +17,7 @@ app.use(cors({
 app.use(requestTrackingMW); // Make A Json File For All The Incoming Request
 
 // Routes
+app.use(authRouter);
 
 // Listen
 app.listen(port, () => {
