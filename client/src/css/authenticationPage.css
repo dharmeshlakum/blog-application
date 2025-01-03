@@ -1,0 +1,154 @@
+.auth-page-container {
+    height: 100vh;
+    width: 100%;
+    background: url("../assets/auth-page-bg.jpeg") no-repeat;
+    background-size: cover;
+    background-position: top center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Auth Main Container */
+.auth-container {
+    width: 470px;
+    padding: 25px;
+    backdrop-filter: blur(10px);
+    border: 1px solid #000000;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.auth-heading {
+    text-align: center;
+    font-size: 25px;
+    color: #b79595;
+    text-shadow: 0 1px 1px #000000, -1px 0 1px #000000;
+    margin-bottom: 5px;
+}
+
+/* Form Section */
+.form-content-wrapper {
+    padding: 0 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-wrapper-container {
+    width: 100%;
+    display: flex;
+    margin-bottom: 10px;
+    flex-direction: column;
+    position: relative;
+}
+
+.input-wrapper-container label {
+    font-size: 14px;
+    font-weight: bold;
+    text-shadow: 1px 0 1px #ffffff;
+}
+
+.input-wrapper-container .input-field {
+    height: 40px;
+    width: 100%;
+    background: transparent;
+    outline: none;
+    padding: 0 10px;
+    color: #000000;
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 3px;
+    border: 1px solid #5e2727;
+    border-radius: 25px;
+}
+
+.input-wrapper-container .input-field:focus {
+    box-shadow: 2px 2px 3px #000000, -2px 0 2px #000000;
+}
+
+.input-wrapper-container .input-field::placeholder {
+    color: #000000;
+    font-weight: 400;
+    font-size: 14px;
+    text-shadow: 1px 0 1px #ffffff;
+}
+
+.password-visibility-btn {
+    position: absolute;
+    z-index: 100;
+    top: 50%;
+    right: 10px;
+    background: transparent;
+    font-size: 15px;
+    transition: all .5s linear;
+}
+
+.password-visibility-btn:hover {
+    color: #5a1447;
+}
+
+.submit-btn {
+    width: max-content;
+    padding: 10px 55px;
+    align-self: center;
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 4px;
+    background: #510f48;
+    color: #ffffff;
+    border-radius: 25px;
+}
+
+.submit-btn:hover {
+    box-shadow: 2px 2px 2px #000000, -2px 0 2px #000000;
+}
+
+.form-content-wrapper .redirection-link-element {
+    font-size: 14px;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 0 2px 2px #ffffff;
+}
+
+.form-content-wrapper .redirection-link-element .redirection-link-element-inner {
+    font-size: 14px;
+    margin-left: 5px;
+    color: #000000;
+}
+
+.form-content-wrapper .redirection-link-element .redirection-link-element-inner:hover {
+    color: #580637;
+    text-decoration: 1px underline #5a1447;
+}
+
+.forget-password-link {
+    font-weight: bold;
+    font-size: 13px;
+    margin-top: -7px;
+}
+
+.forget-password-link:hover {
+    color: #5a1447;
+    text-decoration: 1px underline #510f48;
+}
+
+/* Responive Design */
+@media(max-width:730px) {
+    .auth-container {
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .submit-btn {
+        margin-bottom: 15px;
+        margin-top: 10px;
+    }
+
+    .forget-password-link {
+        margin-top: 0;
+    }
+}
