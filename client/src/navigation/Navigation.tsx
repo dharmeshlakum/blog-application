@@ -1,10 +1,11 @@
 import React from "react";
+import Alert from "../components/alert/Alert";
 
-const Navigation:React.FC = () =>{
+const Navigation: React.FC = () => {
 
-    return(
+    return (
         <>
-        
+            <Alert />
         </>
     );
 }
