@@ -1,0 +1,23 @@
+.alert-component-element{
+    position: absolute;
+    z-index: 101;
+    padding: 15px 20px;
+    width: 500px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    color: #2e159f;
+    border: 1px solid #fa12a4;
+    box-shadow: 3px 3px 3px #a00868, -3px -3px 3px #0824a0;
+    left: 50%;
+    top: -60px;
+    transform: translateX(-50%);
+    opacity: 0;
+    visibility: hidden;
+    transition: all .5s linear;
+}
+.alert-show-coponent{
+    opacity: 1;
+    top: 30px;
+    visibility: visible;
+}
